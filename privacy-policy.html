@@ -1,73 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — A Queda do Céu</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.7; }
-    h1 { color: #1a1a2e; }
-    h2 { color: #16213e; margin-top: 2em; }
-    a { color: #0066cc; }
-    p { margin: 0.8em 0; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — A Queda do Céu</title>
+<style>
+  :root {
+    --bg:          #F2ECE3;
+    --bg-alt:      #EAE2D6;
+    --border:      #D9CFC2;
+    --accent:      #B5541A;
+    --accent-dim:  #7A3610;
+    --text:        #1C1610;
+    --text-2:      #5C4F3D;
+    --text-3:      #8C7D69;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:         #100E0A;
+      --bg-alt:     #181410;
+      --border:     #2E2820;
+      --accent:     #C86030;
+      --accent-dim: #E8824A;
+      --text:       #EDE5D8;
+      --text-2:     #A89880;
+      --text-3:     #6A5C48;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:         #100E0A;
+    --bg-alt:     #181410;
+    --border:     #2E2820;
+    --accent:     #C86030;
+    --accent-dim: #E8824A;
+    --text:       #EDE5D8;
+    --text-2:     #A89880;
+    --text-3:     #6A5C48;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 16px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+  .page { max-width: 680px; margin: 0 auto; padding: 0 24px 80px; }
+  .header { padding: 52px 0 40px; border-bottom: 1px solid var(--border); margin-bottom: 48px; }
+  .game-label { font-family: Georgia, serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+  .game-title { font-family: Georgia, serif; font-size: 32px; font-weight: bold; color: var(--text); line-height: 1.2; margin-bottom: 6px; }
+  .doc-title { font-family: Georgia, serif; font-size: 18px; font-weight: normal; color: var(--text-2); margin-bottom: 20px; }
+  .meta { font-size: 13px; color: var(--text-3); display: flex; gap: 24px; flex-wrap: wrap; }
+  .section { margin-bottom: 40px; padding-left: 20px; border-left: 2px solid var(--accent); }
+  .section-label { font-size: 10.5px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+  .section h2 { font-family: Georgia, serif; font-size: 20px; font-weight: bold; color: var(--text); margin-bottom: 12px; line-height: 1.3; }
+  .section p { color: var(--text-2); font-size: 15px; margin-bottom: 12px; }
+  .section p:last-child { margin-bottom: 0; }
+  .section ul { color: var(--text-2); font-size: 15px; padding-left: 20px; margin-bottom: 12px; }
+  .section ul li { margin-bottom: 6px; }
+  a { color: var(--accent-dim); text-decoration: underline; text-underline-offset: 3px; }
+  code { font-size: 0.9em; background: var(--bg-alt); padding: 1px 4px; border-radius: 3px; }
+  .footer { padding-top: 32px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; }
+  .footer-game { font-family: Georgia, serif; font-size: 14px; font-weight: bold; color: var(--text-2); }
+  .footer-note { font-size: 13px; color: var(--text-3); }
+  .lang-block { margin-top: 64px; padding-top: 48px; border-top: 2px solid var(--accent); }
+  .lang-block-label { font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+  .lang-block .header { padding-top: 24px; }
+  @media (max-width: 480px) { .game-title { font-size: 26px; } }
+</style>
 </head>
 <body>
+<div class="page">
 
-<h1>Privacy Policy</h1>
-<p><strong>App:</strong> A Queda do Céu — Brasil vs. Zombies<br />
-<strong>Developer:</strong> HR Studio<br />
-<strong>Contact:</strong> <a href="mailto:jr.heberson@gmail.com">jr.heberson@gmail.com</a><br />
-<strong>Last updated:</strong> August 26, 2026</p>
+  <!-- ── PORTUGUÊS ─────────────────────────────────────── -->
+  <header class="header">
+    <p class="game-label">🇧🇷 Português</p>
+    <h1 class="game-title">A Queda do Céu</h1>
+    <p class="doc-title">Política de Privacidade</p>
+    <div class="meta">
+      <span>Data de vigência: 20 de novembro de 2026</span>
+      <span>Desenvolvedor: Heberson Jr.</span>
+    </div>
+  </header>
 
-<p>This Privacy Policy describes how HR Studio ("we", "us", or "our") handles information in connection with the mobile game <em>A Queda do Céu — Brasil vs. Zombies</em> (the "App").</p>
+  <div class="section">
+    <p class="section-label">1. Visão Geral</p>
+    <h2>Visão Geral</h2>
+    <p>Esta política descreve como o jogo <em>A Queda do Céu</em> ("o aplicativo") trata as informações
+    quando você joga no Android. Nós não vendemos seus dados. O jogo não exige conta de usuário.
+    O jogo é gratuito e sustentado por anúncios exibidos pelo Google AdMob.</p>
+  </div>
 
-<h2>1. Information We Collect</h2>
-<p>We do not directly collect, store, or process any personally identifiable information.</p>
-<p>The App uses <strong>Google AdMob</strong> to display advertisements. AdMob may automatically collect certain information from your device, including:</p>
-<ul>
-  <li>Device identifiers (e.g. Android Advertising ID)</li>
-  <li>IP address and general location (country/region level)</li>
-  <li>Device model, operating system version</li>
-  <li>Ad interaction data (impressions, clicks)</li>
-  <li>App usage and performance data</li>
-</ul>
-<p>This data is collected by Google and governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+  <div class="section">
+    <p class="section-label">2. Dados Locais</p>
+    <h2>Dados Salvos Localmente no Dispositivo</h2>
+    <p>O progresso do jogo (missões concluídas, defensores selecionados, configuração de dificuldade,
+    idioma e configuração de som) é salvo exclusivamente no armazenamento local do dispositivo
+    (<code>localStorage</code>). Esses dados <strong>nunca saem do seu dispositivo</strong> e
+    não são enviados a nenhum servidor nosso.</p>
+  </div>
 
-<h2>2. How the Information Is Used</h2>
-<p>Information collected through AdMob is used by Google to:</p>
-<ul>
-  <li>Serve relevant advertisements</li>
-  <li>Measure ad performance and campaign effectiveness</li>
-  <li>Improve ad products and services</li>
-</ul>
-<p>We do not use this information for any other purpose, and we do not sell any data to third parties.</p>
+  <div class="section">
+    <p class="section-label">3. Publicidade</p>
+    <h2>Publicidade — Google AdMob</h2>
+    <p>O aplicativo usa o <strong>Google AdMob</strong> para exibir anúncios. O SDK do AdMob pode
+    coletar e processar automaticamente as seguintes informações para personalizar e mensurar anúncios:</p>
+    <ul>
+      <li>ID de publicidade do Android (GAID)</li>
+      <li>Endereço IP e localização aproximada</li>
+      <li>Modelo do dispositivo, versão do SO e idioma</li>
+      <li>Dados de uso e interação com o aplicativo</li>
+    </ul>
+    <p>Esses dados são coletados e processados pelo Google sob a própria política de privacidade deles.
+    Não temos acesso direto a esses dados.</p>
+    <p>Para saber como o Google usa informações de sites e aplicativos que utilizam seus serviços,
+    consulte:
+    <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">
+    Como o Google usa informações de sites ou apps que usam nossos serviços</a>.<br>
+    Política de Privacidade do Google:
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+    policies.google.com/privacy</a>.</p>
+  </div>
 
-<h2>3. Third-Party Services</h2>
-<p>The App integrates the following third-party service:</p>
-<ul>
-  <li><strong>Google AdMob</strong> — ad serving and monetization. <a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob Privacy &amp; Security</a></li>
-</ul>
+  <div class="section">
+    <p class="section-label">4. Consentimento</p>
+    <h2>Consentimento (EEE, Reino Unido e Suíça)</h2>
+    <p>Se você se encontra no Espaço Econômico Europeu, no Reino Unido ou na Suíça, o aplicativo
+    exibe um aviso de consentimento gerenciado pelo <strong>Google UMP (User Messaging Platform)</strong>
+    antes de qualquer anúncio personalizado ser solicitado. Você pode revisar ou alterar suas escolhas
+    de consentimento a qualquer momento pelo <strong>botão "Privacidade"</strong> disponível na tela
+    de seleção de missões.</p>
+  </div>
 
-<h2>4. Data Retention</h2>
-<p>We do not retain any user data on our servers. Any data collected by AdMob is retained according to Google's own data retention policies.</p>
+  <div class="section">
+    <p class="section-label">5. Desativar Personalização</p>
+    <h2>Como Desativar a Personalização de Anúncios (Android)</h2>
+    <p>Você pode redefinir ou desativar a personalização de anúncios a qualquer momento nas
+    configurações do seu dispositivo Android em: <strong>Configurações → Privacidade → Anúncios</strong>.</p>
+  </div>
 
-<h2>5. Children's Privacy</h2>
-<p>The App is rated for users aged 9 and above. We do not knowingly collect personal information from children under 13. AdMob is configured to serve non-personalized ads in compliance with applicable children's privacy laws (COPPA, GDPR-K).</p>
+  <div class="section">
+    <p class="section-label">6. Crianças</p>
+    <h2>Crianças</h2>
+    <p>O aplicativo <strong>não é direcionado a crianças menores de 13 anos</strong>. Não coletamos
+    intencionalmente informações de crianças. Se você acredita que uma criança forneceu informações
+    pessoais por meio do aplicativo, entre em contato conosco para que possamos tomar as
+    providências cabíveis.</p>
+  </div>
 
-<h2>6. Your Rights (GDPR / LGPD)</h2>
-<p>If you are located in the European Union or Brazil, you may have rights regarding your personal data, including the right to access, correct, or delete it. Since we do not directly collect personal data, requests related to AdMob data should be directed to Google. For any other concerns, contact us at <a href="mailto:jr.heberson@gmail.com">jr.heberson@gmail.com</a>.</p>
+  <div class="section">
+    <p class="section-label">7. Retenção e Exclusão</p>
+    <h2>Retenção e Exclusão de Dados</h2>
+    <p>Os dados de progresso do jogo ficam armazenados no dispositivo enquanto o aplicativo estiver
+    instalado. Para excluir todos os dados, desinstale o aplicativo ou limpe os dados do aplicativo
+    em <strong>Configurações → Aplicativos → A Queda do Céu → Armazenamento → Limpar dados</strong>.</p>
+  </div>
 
-<h2>7. Opt-Out of Personalized Ads</h2>
-<p>You can opt out of personalized advertising on your Android device via:<br />
-<strong>Settings → Google → Ads → Delete advertising ID</strong> (Android 12+) or <strong>Opt out of Ads Personalization</strong> (older versions).</p>
+  <div class="section">
+    <p class="section-label">8. Alterações</p>
+    <h2>Alterações nesta Política</h2>
+    <p>Se esta política for alterada de forma material, atualizaremos a data de vigência acima.
+    O uso continuado do aplicativo após qualquer alteração constitui aceitação da política revisada.</p>
+  </div>
 
-<h2>8. Changes to This Policy</h2>
-<p>We may update this Privacy Policy from time to time. Changes will be reflected by updating the "Last updated" date above. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+  <div class="section">
+    <p class="section-label">9. Contato</p>
+    <h2>Contato</h2>
+    <p>Dúvidas sobre privacidade:
+    <a href="mailto:jr.heberson@gmail.com">jr.heberson@gmail.com</a></p>
+  </div>
 
-<h2>9. Contact</h2>
-<p>For any questions about this Privacy Policy, contact us at:<br />
-<a href="mailto:jr.heberson@gmail.com">jr.heberson@gmail.com</a></p>
+  <!-- ── ENGLISH ─────────────────────────────────────────── -->
+  <div class="lang-block">
+    <p class="lang-block-label">🇺🇸 English</p>
 
+    <div class="header" style="padding-top:24px;">
+      <p class="game-label">Mobile Game</p>
+      <h1 class="game-title">A Queda do Céu</h1>
+      <p class="doc-title">Privacy Policy</p>
+      <div class="meta">
+        <span>Effective date: November 20, 2026</span>
+        <span>Developer: Heberson Jr.</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <p class="section-label">1. Overview</p>
+      <h2>Overview</h2>
+      <p>This policy describes how <em>A Queda do Céu</em> ("the app") handles information when you
+      play on Android. We do not sell your data. The app requires no user account. The game is free
+      and supported by ads served through Google AdMob.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-label">2. Local Data</p>
+      <h2>Data Stored Locally on Your Device</h2>
+      <p>Game progress (completed missions, selected defenders, difficulty setting, language and sound
+      preference) is stored exclusively in local device storage (<code>localStorage</code>). This data
+      <strong>never leaves your device</strong> and is not sent to any server we operate.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-label">3. Advertising</p>
+      <h2>Advertising — Google AdMob</h2>
+      <p>The app uses <strong>Google AdMob</strong> to serve advertisements. The AdMob SDK may
+      automatically collect and process the following information to personalize and measure ads:</p>
+      <ul>
+        <li>Android Advertising ID (GAID)</li>
+        <li>IP address and approximate location</li>
+        <li>Device model, OS version, and language</li>
+        <li>App usage and interaction data</li>
+      </ul>
+      <p>This data is collected and processed by Google under their own privacy policy. We have no
+      direct access to it.</p>
+      <p>To learn how Google uses information from sites and apps that use their services, see:
+      <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">
+      How Google uses information from sites or apps that use our services</a>.<br>
+      Google Privacy Policy:
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+      policies.google.com/privacy</a>.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-label">4. Consent</p>
+      <h2>Consent (EEA, UK and Switzerland)</h2>
+      <p>If you are located in the European Economic Area, the United Kingdom, or Switzerland, the app
+      presents a consent notice managed by the <strong>Google UMP (User Messaging Platform)</strong>
+      before any personalized ad is requested. You may review or change your consent choices at any
+      time using the <strong>"Privacy" button</strong> available on the mission select screen.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-label">5. Opt Out</p>
+      <h2>Opting Out of Ad Personalisation on Android</h2>
+      <p>You can reset or opt out of ad personalisation at any time through your Android device
+      settings at: <strong>Settings → Privacy → Ads</strong>.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-label">6. Children</p>
+      <h2>Children</h2>
+      <p>This app is <strong>not directed at children under 13</strong>. We do not knowingly collect
+      information from children. If you believe a child has provided personal information through the
+      app, please contact us so we can take appropriate action.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-label">7. Retention &amp; Deletion</p>
+      <h2>Data Retention and Deletion</h2>
+      <p>Game progress data is stored on your device for as long as the app is installed. To delete all
+      data, uninstall the app or clear its data via
+      <strong>Settings → Apps → A Queda do Céu → Storage → Clear data</strong>.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-label">8. Changes</p>
+      <h2>Changes to This Policy</h2>
+      <p>If this policy changes materially, we will update the effective date above. Continued use of
+      the app after any change constitutes acceptance of the revised policy.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-label">9. Contact</p>
+      <h2>Contact</h2>
+      <p>For any privacy-related questions, contact us at:
+      <a href="mailto:jr.heberson@gmail.com">jr.heberson@gmail.com</a></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span class="footer-game">A Queda do Céu</span>
+    <span class="footer-note">© 2026 Heberson Jr. All rights reserved.</span>
+  </footer>
+</div>
 </body>
 </html>
